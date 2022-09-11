@@ -1,0 +1,21 @@
+[{
+  "id": 1,
+  "campaignName": "Campaign Name",
+  "description": "Campaign Description",
+  "tagline": "Help us save people",
+  "campaignPoster": "imageURL"
+},
+{
+  "id": 2,
+  "campaignName": "Campaign Name",
+  "description": "Campaign Description",
+  "tagline": "Help us save people",
+  "campaignPoster": "imageURL"
+},
+{
+  "id": 3,
+  "campaignName": "Campaign Name",
+  "description": "Campaign Description",
+  "tagline": "Help us save people",
+  "campaignPoster": "imageURL"
+}]

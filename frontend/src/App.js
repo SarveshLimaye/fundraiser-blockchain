@@ -2,7 +2,10 @@ import './App.css';
 import Web3 from "web3";
 import detectEthereumProvider from "@metamask/detect-provider"
 import { loadContract } from "./utils/load-contract";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {useEffect,useState} from 'react';
+import Navbar from "./components/Navbar";
+import Home from "./pages/home";
 
 function App() {
   const [web3Api, setWeb3Api] = useState({
@@ -50,10 +53,12 @@ const tranferFund = async () => {
 }
   return (
     <div className="App">
-      <h1>Fund Raiser</h1>
-      <p>Account: {account}</p>
-      {balance ? <p> Collected Amount : {balance} ETH</p> : <p>Loading...</p>}
-      <button onClick={tranferFund}>Transfer Fund</button>
+    <Router>
+    <Navbar />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+      </Routes>
+  </Router>
     </div>
   );
 }
